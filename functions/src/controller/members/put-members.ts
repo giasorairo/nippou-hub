@@ -24,7 +24,7 @@ export const putMembers = async (
       .update({ ...requestData });
     // レスポンス
     res.status(200);
-    res.send();
+    res.send({ message: 'success' });
   } catch (e) {
     res.status(400);
     res.send({ message: e || 'エラー' });
