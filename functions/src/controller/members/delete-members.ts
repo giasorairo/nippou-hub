@@ -9,7 +9,7 @@ export const deleteMembers = async (
     const { memberId } = req.params;
     await admin.firestore().collection('members').doc(memberId).delete();
     res.status(200);
-    res.send();
+    res.send({ message: 'success' });
   } catch (e) {
     res.status(400);
     res.send({ message: e || 'error' });

@@ -9,4 +9,6 @@
 // なし
 
 /** レスポンスの型 */
-// なし
+export type ApiDeleteMembersEntity = {
+  message: string,
+};

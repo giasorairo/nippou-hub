@@ -19,4 +19,6 @@ export type ApiPutMembersRequestData = {
 };
 
 /** レスポンスの型 */
-// なし
+export type ApiPutMembersEntity = {
+  message: string,
+};

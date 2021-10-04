@@ -10,11 +10,18 @@
     ]
   },
   "hosting": {
-    "public": "public",
+    "public": "view/nippou-hub-app/build",
+    "cleanUrls": true,
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }
